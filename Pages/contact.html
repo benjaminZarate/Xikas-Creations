@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Contacto</title>
 </head>
 <main>
@@ -28,33 +32,38 @@
         </header>
         <div class="form">
             <form action="thanks.html" method="get" enctype="application/x-www-form-urlencoded">
-                <p><label class="roboto" for="nombre">Nombre: </label></p>
-            <input class="styleInput" type="text" name="nombre" placeholder="Ingresa tu nombre"/>
-            
-            <p><label for="apellido">Apellido: </label></p>
-            <input class="styleInput" type="text" name="apellido" placeholder="Ingresa tu apellido"/>
-            
-            <p><label for="email">Email: </label></p>
-            <input class="styleInput" type="text" name="email" placeholder="Ingresa tu email"/>
-            
-            <p><label for="motivo">Motivo de contacto</label></p>
-            <select class="styleInput" name="motivo">
-                <option class="roboto" value="Feedback">Feedback</option>
-                <option value="Felicitaciones">Felicitaciones</option>
-                <option value="Reclamo">Reclamo</option>
-            </select>
-            
-            <p><label for="newsletter">¿Desea recibir nuestro newsletter?
-                <input type="checkbox" name="newsletter"/>
-            </label></p>
-            
-            
-            <p><label for="comentarios">Comentarios</label></p>
-            <textarea class="styleInput" name="comentarios" id="comentarios" rows="5" cols="40"></textarea>
-            <div>
-                <input class="buttons" type="submit" value="Enviar" />
-                <input class="buttons" type="reset" value="Limpiar" />
-            </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electronico</label>
+                    <input type="text" class="form-control" id="email" placeholder="Ingrese su correo electronico">
+                </div>            
+                <select class="custom-select">
+                    <option selected>Motivo de su contacto</option>
+                    <option value="3">Ayuda</option>
+                    <option value="1">Feedback</option>
+                    <option value="2">Felicitaciones</option>
+                    <option value="3">Reclamo</option>
+                </select>
+                <div class="newsletterCheckbox">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="newsletter">
+                        <label class="custom-control-label" for="newsletter">¿Desea recibir nuestro newsletter?</label>
+                    </div>
+                </div>
+                
+                <p><label for="comentarios">Comentarios</label></p>
+                <textarea class="styleInput" name="comentarios" id="comentarios" rows="5" cols="40"></textarea>
+                <div>
+                    <input class="btn btn-primary" type="submit" value="Enviar" />
+                    <input class="btn btn-secondary" type="reset" value="Limpiar" />
+                </div>
             </form>
         </div>
         <hr>
