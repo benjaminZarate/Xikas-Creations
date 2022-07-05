@@ -221,6 +221,11 @@ input[type=checkbox]{
     font-weight: bold;
 }
 
+.carousel-item img {
+    width: 100%;
+    height: 80%;
+}
+
 @media screen and (min-width: 650px) {
     li{
         display: inline-block;
@@ -313,6 +318,11 @@ input[type=checkbox]{
         display: flex;
         align-items: center;
     } */
+
+    .carousel-item img {
+        width: 500px;
+        height: 450px;
+    }
 
     footer div a img{
         width: 30px;
