@@ -1,0 +1,29 @@
+header{
+    grid-area: header;
+    padding: 10px;
+}
+
+nav{
+    grid-area: nav;
+    margin: 10px;
+}
+
+li{
+    display: inline-block;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    &.currentTab{
+        font-weight: bold;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    li{
+        display: inline-block;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+}

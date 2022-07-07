@@ -1,5 +1,18 @@
 {
   "dependencies": {
     "bootstrap": "^5.2.0-beta1"
+  },
+  "author": "Benjamin Zarate",
+  "description": "Libretas artesaales",
+  "license": "MIT",
+  "name": "xikas-creations",
+  "scripts": {
+    "watch:css": "nodemon -e scss -x \"npm run build:css\"",
+    "build:css": "node-sass --output-style compressed assets/scss/style.scss assets/css/newStyles.css"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4"
   }
 }
