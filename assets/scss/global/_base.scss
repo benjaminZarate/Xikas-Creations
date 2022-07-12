@@ -8,6 +8,10 @@ html, body{
     padding: 0;
 }
 
+$spacing:(
+    padding: 10px
+);
+
 #wrapper{
     display: grid;
     grid-template-areas: 
@@ -32,11 +36,19 @@ html, body{
     grid-area: hrBottom;
 }
 
+@mixin sizes($width, $height)
+{
+    width: $width;
+    height: $height;
+}
 
-
-header h1{
+.h {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+}
+
+header h1{
+    @extend .h;
     text-align: center;
     padding-left: 15px;
     overflow-wrap: break-word;
@@ -55,16 +67,15 @@ header h1{
     padding-top: 50px;
 
     img{
-        width: 100%;
-        height: 1fr;
+        @include sizes(100%, 1fr);
     }
 }
 
 p{
-    font-family: 'Roboto', sans-serif;
+    @extend .h;
     font-weight: lighter;
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: map-get($map: $spacing, $key: padding);
 
      &.price{
         font-weight: bold;
@@ -72,8 +83,7 @@ p{
 }
 
 h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    @extend .h;
     font-size: 10px;
     padding: 5px;
 }
@@ -84,8 +94,7 @@ h2{
     flex-direction: column;
     align-items: center;
     img{
-        width: 100%;
-        height: 80%;
+        @include size(100%, 80%);
     }
     div p {
         margin: 10px;
@@ -128,7 +137,7 @@ input[type=checkbox]{
 
 .newsletterCheckbox{
     margin-left: 0px;
-    padding: 10px;
+    padding: map-get($map: $spacing, $key: padding);
 }
 
 /* Index Style */
@@ -157,10 +166,9 @@ input[type=checkbox]{
 .product{
     display: inline-block;
     width: 300px;
-    padding: 10px;
+    padding: map-get($map: $spacing, $key: padding);
     img{
-        width: 300px;
-        height: 300px;
+        @include size(300px,300px);
     }
     p{
         overflow-wrap: break-word;
@@ -168,8 +176,7 @@ input[type=checkbox]{
 }
 
 .carousel-item img {
-    width: 100%;
-    height: 80%;
+    @include size(100%, 80%);
 }
 
 @media screen and (min-width: 650px) {
@@ -183,7 +190,7 @@ input[type=checkbox]{
         grid-area: content;
         display: flex;
         flex-direction: row;
-        padding: 10px;
+        padding: map-get($map: $spacing, $key: padding);
         align-items: center;
         flex-wrap: wrap;
     }
@@ -191,7 +198,7 @@ input[type=checkbox]{
     .product {
         display: inline-block;
         width: 300px;
-        padding: 10px;
+        padding: map-get($map: $spacing, $key: padding);
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);
         -webkit-transition-duration: 0.3s;
@@ -211,7 +218,7 @@ input[type=checkbox]{
         overflow-wrap: break-word;
         width: 100%;
         align-items: center;
-        padding: 20px;
+        padding: map-get($map: $spacing, $key: (padding) * 2);
         p{
             margin: auto;
             width: 50%;
@@ -227,9 +234,8 @@ input[type=checkbox]{
         align-items: center;
 
         img{
-            width: 40%;
-            height: 40%;
-            padding-right: 10px;
+            @include sizes(40%, 40%);
+            padding-right: map-get($map: $spacing, $key: padding);
         }
     }
 
@@ -252,13 +258,11 @@ input[type=checkbox]{
         width: 100%;
         justify-content: space-between;
         div a img{
-            width: 30px;
-            height: 30px;
+            @include sizes(30px, 30px);
         }
     }
 
     .carousel-item img {
-        width: 500px;
-        height: 450px;
+        @include sizes(500px, 450px);
     }
 }
