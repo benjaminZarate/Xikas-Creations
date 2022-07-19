@@ -12,46 +12,47 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/newStyles.css">
     <title>Contacto</title>
 </head>
 <main>
     <body>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Xika's Creations</a></li>
-                <li><a href="./products.html">Productos</a></li>
-                <li><a href="./news.html">Novedades</a></li>
-                <li><a class="currentTab" href="./contact.html">Contacto</a></li>
-                <li><a href="./about.html">Nosotros</a></li>
-            </ul>
-        </nav>
-        <hr id="hrTop">
-        <header>
-            <h1>Contacto</h1>
-        </header>
-        <div class="form">
-            <form action="thanks.html" method="get" enctype="application/x-www-form-urlencoded">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                </div>
-                <div class="form-group">
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo electronico</label>
-                    <input type="text" class="form-control" id="email" placeholder="Ingrese su correo electronico">
-                </div>            
-                <select class="custom-select">
-                    <option selected>Motivo de su contacto</option>
-                    <option value="3">Ayuda</option>
-                    <option value="1">Feedback</option>
-                    <option value="2">Felicitaciones</option>
-                    <option value="3">Reclamo</option>
-                </select>
-                <div class="newsletterCheckbox">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Xika's Creations</a></li>
+                    <li><a href="./products.html">Productos</a></li>
+                    <li><a href="./news.html">Novedades</a></li>
+                    <li><a class="currentTab" href="./contact.html">Contacto</a></li>
+                    <li><a href="./about.html">Nosotros</a></li>
+                </ul>
+            </nav>
+            <hr id="hrTop">
+            <header>
+                <h1>Contacto</h1>
+            </header>
+            <div class="form">
+                <form action="thanks.html" method="get" enctype="application/x-www-form-urlencoded">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electronico:</label>
+                        <input type="text" class="form-control" id="email" placeholder="Ingrese su correo electronico">
+                    </div>            
+                    <select class="custom-select" id="dropdown">
+                        <option selected>Motivo de su contacto</option>
+                        <option value="3">Ayuda</option>
+                        <option value="1">Feedback</option>
+                        <option value="2">Felicitaciones</option>
+                        <option value="3">Reclamo</option>
+                    </select>
+                    <div class="newsletterCheckbox">
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="newsletter">
                         <label class="custom-control-label" for="newsletter">¿Desea recibir nuestro newsletter?</label>
@@ -82,6 +83,7 @@
                 <li><a href="./about.html">Nosotros</a></li>
             </ul>
         </footer>
+    </div>
     </body>
 </main>
 </html>
