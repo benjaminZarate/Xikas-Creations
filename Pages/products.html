@@ -22,24 +22,23 @@
 </head>
 <main>
     <body>
-        <div id="wrapper">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Xika's Creations</a></li>
+        <div class="wrapper">
+            <nav class="nav">
+                <a href="../index.html" class="logo">Xika's Creations</a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
                     <li><a class="currentTab" href="./products.html">Productos</a></li>
                     <li><a href="./news.html">Novedades</a></li>
                     <li><a href="./contact.html">Contacto</a></li>
                     <li><a href="./about.html">Nosotros</a></li>
                 </ul>
             </nav>
-            <hr>
-            <header>
-                <h1>Productos</h1>
-            </header>
             <div class="productsList">
                 <div class="wow animate__animated animate__fadeIn" data-wow-duration="1s">
                     <div class="product">
-                        <img src="../assets/libreta1.jpg" >
+                        <img src="../assets/libreta1.jpg">
                         <p>Libreta horizontal</p>
                         <p class="price">$10.000 CLP</p>
                     </div>
@@ -73,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            <hr>
+            <hr id="hrBottom">
             <footer>
                 <div>
                     <h2>©2022 Xika’s Creations</h2>

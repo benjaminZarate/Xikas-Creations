@@ -18,19 +18,18 @@
 <main>
     <body>
         <div class="wrapper">
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Xika's Creations</a></li>
-                    <li><a href="./products.html">Productos</a></li>
-                    <li><a href="./news.html">Novedades</a></li>
-                    <li><a class="currentTab" href="./contact.html">Contacto</a></li>
-                    <li><a href="./about.html">Nosotros</a></li>
-                </ul>
+            <nav class="nav">
+                    <a href="../index.html" class="logo">Xika's Creations</a>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./products.html">Productos</a></li>
+                        <li><a href="./news.html">Novedades</a></li>
+                        <li><a class="currentTab" href="./contact.html">Contacto</a></li>
+                        <li><a href="./about.html">Nosotros</a></li>
+                    </ul>
             </nav>
-            <hr id="hrTop">
-            <header>
-                <h1>Contacto</h1>
-            </header>
             <div class="form">
                 <form action="thanks.html" method="get" enctype="application/x-www-form-urlencoded">
                     <div class="form-group">
@@ -53,37 +52,36 @@
                         <option value="3">Reclamo</option>
                     </select>
                     <div class="newsletterCheckbox">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="newsletter">
-                        <label class="custom-control-label" for="newsletter">¿Desea recibir nuestro newsletter?</label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="newsletter">
+                            <label class="custom-control-label" for="newsletter">¿Desea recibir nuestro newsletter?</label>
+                        </div>
                     </div>
-                </div>
-                
-                <p><label for="comentarios">Comentarios</label></p>
-                <textarea class="styleInput" name="comentarios" id="comentarios" rows="5" cols="40"></textarea>
-                <div>
-                    <input class="btn btn-primary" type="submit" value="Enviar" />
-                    <input class="btn btn-secondary" type="reset" value="Limpiar" />
-                </div>
-            </form>
-        </div>
-        <hr id="hrBottom">
-        <footer>
-            <div>
-                <h2>©2022 Xika’s Creations</h2>
-                <a href="https://www.instagram.com/x.camposm/?hl=es" target="_blank">
-                    <img src="../assets/Instagram_logo_2016.svg.webp" width="30" height="30">
-                </a>
+                    <p><label for="comentarios">Comentarios</label></p>
+                    <textarea class="styleInput" name="comentarios" id="comentarios" rows="5" cols="40"></textarea>
+                    <div>
+                        <input class="btn btn-primary" type="submit" value="Enviar" />
+                        <input class="btn btn-secondary" type="reset" value="Limpiar" />
+                    </div>
+                </form>
             </div>
-            <ul>
-                <li><a href="../index.html">Xika's Creations</a></li>
-                <li><a href="./products.html">Productos</a></li>
-                <li><a href="./news.html">Novedades</a></li>
-                <li><a href="./contact.html">Contacto</a></li>
-                <li><a href="./about.html">Nosotros</a></li>
-            </ul>
-        </footer>
-    </div>
+            <footer>
+                <hr>
+                <div>
+                    <h2>©2022 Xika’s Creations</h2>
+                    <a href="https://www.instagram.com/x.camposm/?hl=es" target="_blank">
+                        <img src="../assets/Instagram_logo_2016.svg.webp" width="30" height="30">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="../index.html">Xika's Creations</a></li>
+                    <li><a href="./products.html">Productos</a></li>
+                    <li><a href="./news.html">Novedades</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                    <li><a href="./about.html">Nosotros</a></li>
+                </ul>
+            </footer>
+        </div>
     </body>
 </main>
 </html>
