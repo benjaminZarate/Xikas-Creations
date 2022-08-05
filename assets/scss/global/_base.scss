@@ -128,11 +128,19 @@ $spacing:(
     margin:auto;
 }
 
+header h1{
+    @extend .h;
+    text-align: center;
+    padding: 15px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    // padding-top: 20px;
 
     img{
         @include sizes(100%, 1fr);
@@ -289,7 +297,7 @@ input[type=checkbox]{
         overflow-wrap: break-word;
         width: 100%;
         align-items: center;
-        padding: 20;
+        // padding: 20;
         p{
             margin: auto;
             width: 50%;
